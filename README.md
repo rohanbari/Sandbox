@@ -45,3 +45,5 @@ If you want, I can:
 - Add a small demo in `src/main.cpp` that blinks the LED while connecting.
 - Move WiFi credentials to a separate, ignored config file and update build
   instructions.
+
+Special thanks to ChatGPT for documenting the code.
