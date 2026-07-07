@@ -17,15 +17,15 @@ void setup()
     Serial.begin(115200);
 
     led_init();
-    wifi_connect();
+    connectWiFi();
 
     // Start the web server (mounts SPIFFS and begins listening).
-    web_server_begin();
+    beginWebServer();
 }
 
 void loop()
 {
     // Serve incoming HTTP requests. This is non-blocking when no client is
     // connected and keeps the code simple for example purposes.
-    web_server_handle_client();
+    handleWebServerClient();
 }

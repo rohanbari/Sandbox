@@ -15,13 +15,10 @@
 
 // Default credentials used by the example. Replace with your network values
 // or override them at build time.
-// `inline` gives these variables external linkage with a single definition
-// across translation units (C++17). This avoids multiple-definition errors
-// when the header is included from several .cpp files.
 inline const char* WIFI_SSID = "Photoelectron";
 inline const char* WIFI_PASSWORD = "linuxman123";
 
 // Connect to WiFi; blocks until a connection is established.
-void wifi_connect();
+void connectWiFi();
 
 #endif

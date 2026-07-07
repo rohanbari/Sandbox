@@ -8,7 +8,7 @@
  * code consider adding a timeout or running the connection flow asynchronously.
  */
 
-void wifi_connect()
+void connectWiFi()
 {
     // Start the connection process using the configured credentials.
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);

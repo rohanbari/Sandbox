@@ -39,15 +39,15 @@ static const char INDEX_HTML[] = R"rawliteral(<!DOCTYPE html>
 
 WiFiServer server(80);
 
-void web_server_begin()
+void beginWebServer()
 {
     // Start listening for incoming HTTP connections on port 80.
     server.begin();
 }
 
-void web_server_handle_client()
+void handleWebServerClient()
 {
-    WiFiClient client = server.available();
+    WiFiClient client = server.accept();
     if (!client)
         return;
 
