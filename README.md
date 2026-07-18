@@ -39,5 +39,3 @@ Notes and recommendations
 - The `wifi_connect()` function currently blocks until connected. Add a
   timeout or make it non-blocking if the application needs to remain
   responsive during WiFi setup.
-
-Special thanks to ChatGPT for documenting the code.
